@@ -12,5 +12,6 @@ dist:
 	cd tmp && git checkout gh-pages
 	cp index.html style.css tmp/
 	cp -rf o tmp/o
-	cd tmp && git commit -a -m update
-	cd tmp && git push
+	cd tmp && git commit -a -m update || true
+	cd tmp && git push git@github.com:trufae/opblog
+	rm -rf tmp
