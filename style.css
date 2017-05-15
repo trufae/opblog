@@ -53,6 +53,10 @@ ul {
   z-index: 200;
 }
 
+.index:activate {
+  z-index: 200;
+}
+
 .whitebox {
   position:absolute;
   width:100%;
@@ -64,8 +68,8 @@ ul {
 }
 
 .contents {
-  left: 10%;
-  right: 10%;
+  left: 4%;
+  right: 4%;
   position:absolute;
   background-color: #f0f0f0;
   padding: 20px;
