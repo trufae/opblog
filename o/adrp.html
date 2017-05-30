@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</meta>
+<link rel="stylesheet" href="../style.css"></link>
+</head>
+<body>
+<div class="title">
+<h1>OpBlog</h1>
+
+<p>The Assembly Programming Blog</p>
+
+<p><a href="https://twitter.com/trufae">--pancake</a></p>
+</div>
+<div class="whitebox">
+</div>
+<div class="contents">
+<h2>ADRP</h2>
+
+<p>The ARM64 assembly language feels way more natural and simple than ARM or Thumb. But sometimes it is not that intuitive.</p>
+
+<p>This instruction looks like this in the wild:</p>
+
+<pre><code>adrp x0, label</code></pre>
+
+<p>bl start
+<em>start:
+	movz x1, msg-</em>start
+	add x1, x1, x30
+	movz x0, 1
+	movz x2, msg_len</p>
+
+<pre><code>movz x8, 64 ;; SYS_write
+svc 0
+
+movz x0, 0
+movz x8, 93 ;; SYS_exit
+svc 0
+ret</code></pre>
+
+<p>msg:
+	.asciz &quot;Hello World\n&quot;
+.equ msg_len, $$-msg</p>
+</div>
+<div class="index">
+<br />
+<ul><li><a href="setend.html">setend</a></li><li><a href="adrp.html">adrp</a></li><li><a href="index.html">index</a></li></ul>
+</div>
+</body>
+</html>
