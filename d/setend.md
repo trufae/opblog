@@ -52,5 +52,9 @@ When using AArch32, having the CPSR.E bit have a different value to the equivale
 
 See also
 --------
+* https://developer.arm.com/docs/den0024/latest/4-armv8-registers/42-processor-state
+* http://elixir.free-electrons.com/linux/latest/source/arch/arm64/include/asm/ptrace.h
+* http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.den0024a/ch04s05s02.html
+* https://chromium.googlesource.com/chromiumos/third_party/coreboot/+/chromeos-2015.07/payloads/libpayload/arch/arm64/lib/pstate.c
 * http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0489f/Cihjgdid.html
 * https://developer.arm.com/docs/den0024/latest/4-armv8-registers/42-processor-state
